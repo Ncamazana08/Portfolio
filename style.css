@@ -29,11 +29,11 @@
   float:left;
 }
 .buttoncontainer{
-    padding: 50px;
+    padding: 0;
     color: white;
     padding-left: 50px;
     font-size: 30px;
-    padding-top: 80px;
+    padding-top: 0;
     position: absolute;
     float: left;
 }
@@ -43,10 +43,11 @@ body{
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px; */
+    background-position: 100%;
     background-image: url(https://p0.pikrepo.com/preview/377/350/leafless-tree-in-middle-of-snow-field.jpg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-size: cover;
     /* backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px) ;
@@ -118,7 +119,7 @@ body{
       }
       
       /* Add arrows to the left container (pointing right) */
-      .left::before {
+      /* .left::before {
         content: " ";
         height: 0;
         position: absolute;
@@ -129,7 +130,7 @@ body{
         border: medium solid white;
         border-width: 10px 0 10px 10px;
         border-color: transparent transparent transparent white;
-      }
+      } */
       
       /* Add arrows to the right container (pointing left) */
       /* .right::before {
@@ -153,7 +154,7 @@ body{
       /* The actual content */
       .content {
         padding: 20px 30px;
-        background-color: lightslategray;
+        background-color: rgb(66, 149, 233);
         position: relative;
         border-radius: 6px;
       }
@@ -222,5 +223,126 @@ body{
       backdrop-filter: blur( 1.5px );
       -webkit-backdrop-filter: blur( 1.5px );
       border-radius: 50px;
-      border: 2px solid rgba( 255, 255, 255, 0.18 );
+      border: 2px solid rgba(255, 255, 255, 0.65);
     }
+    footer {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#testhead{
+  margin-top: 8%;
+}
+
+image{
+  width: 0%;
+  height: 0%;
+  float: right;
+}
+
+@media only screen and (max-width: 300px){
+image{
+  float: none;
+}
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-image: linear-gradient(to bottom, rgba(0, 26, 255, 0.65), rgba(4, 215, 243, 0.712));
+  font-weight: bolder;
+  color: white;
+  transform: rotateY(180deg);
+  border:black;
+}   
+
+div.flip-card {
+  /* background-color: lightgrey; */
+  width: 400px;
+  height: 500px;
+  /* border font: inherit;: 15px solid blue; */
+  padding-top: 7px;
+  margin-top: 8%;
+  border: black;
+}
+
+.flip-container {
+  /* padding-top: 10px; */
+  flex-direction: row;
+  display: flex;
+  grid-row: 10px;
+  gap: 10px 20px;
+  column-gap: 30px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-flow: space-evenly;
+}
+.container3 {
+  width: 80%; 
+  justify-content: center; 
+  margin-top: 8%; 
+  margin-left: 10%;
+
+}
+form,
+input,
+textarea,
+button { background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  color: white;
+  padding: 5% 10%;
+  }
+form {margin-top: 10%;
+  margin-left: 20%;
+  padding-top:10px ;
+  width: 1000px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+/* 
+li {
+      display: inline-block;
+  }
+ul {
+      background-color:darkgrey;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      font-size: 20px;
+  } */
