@@ -29,8 +29,8 @@
   float:left;
 }
 .buttoncontainer{
-    padding: 0;
-    color: white;
+    /* padding: 0; */
+    color: black;
     padding-left: 50px;
     font-size: 30px;
     padding-top: 0;
@@ -44,7 +44,7 @@ body{
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px; */
     background-position: 100%;
-    background-image: url(https://p0.pikrepo.com/preview/377/350/leafless-tree-in-middle-of-snow-field.jpg);
+    background-image: url(https://i.pinimg.com/564x/94/b1/de/94b1defeb1ba4116bb14b23e99298961.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -331,18 +331,15 @@ form {margin-top: 10%;
   flex-direction: column;
   gap: 20px;
   }
-/* 
-li {
-      display: inline-block;
+  iframe{
+    display: calc(center);
+    margin-left: 10%;
+    width: 80%;
   }
-ul {
-      background-color:darkgrey;
-      position: fixed;
-      top: 0%;
-      left: 0%;
-      right: 0%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-right: 20px;
-      font-size: 20px;
-  } */
+/* #home{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+ */
+
+}
