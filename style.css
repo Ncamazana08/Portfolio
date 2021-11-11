@@ -96,7 +96,7 @@ body{
       }
       
       /* The circles on the timeline */
-      .container-1::after { 
+      /* .container-1::after { 
         content: '';
         position: absolute;
         width: 25px;
@@ -107,7 +107,7 @@ body{
         top: 15px;
         border-radius: 50%;
         z-index: 1;
-      }
+      } */
       
       /* Place the container to the left */
       .left {
@@ -374,5 +374,4 @@ form {margin-top: 10%;
 .img-fluid{
   vertical-align: middle;
   -ms-flex-item-align: center;
-  display: inline;
 }
