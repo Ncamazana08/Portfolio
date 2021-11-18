@@ -337,11 +337,21 @@ form {margin-top: 10%;
 } */
 
 .img-fluid{
-  vertical-align: middle;
-  -ms-flex-item-align: center;
+  height: auto;
+  max-width:100%;
+  /* vertical-align: middle;
+  -ms-flex-item-align: center; */
 }
 .container-fluid{
   display: flex;
   width: 90%;
-  overflow: none;
+  overflow: hidden;
+}
+.contain_01{
+  width: 90%;
+}
+.container-fluid_1{
+  display: flex;
+  overflow: hidden;
+  width: 90%;
 }
