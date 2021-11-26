@@ -12,6 +12,23 @@
     <link rel="icon" type="image/x-icon" href="siyanda002.png">
 </head>
 <body>
+  <!-- <div class="buttons" style="display: flex; padding-top: 5% ;padding-left: 5%;">
+  <button type="button" id="clock" onclick="currentTime()"></button>
+</div>
+  <script>
+      function currentTime() {
+          let time = new Date();
+          let hours = time.getHours();
+          let mins = time.getMinutes();
+          let sec = time.getSeconds();
+          let acctime = hours + ":" + mins + ":" + sec;
+          document.getElementById("clock").innerText = acctime;
+          let t = setTimeout(function() {
+              currentTime();
+          },1000);
+      }
+      currentTime();
+      </script> -->
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg fixed-top" style="background-color: rgba(252, 253, 253, 0.274);">
   <div class="container-fluid">
@@ -30,6 +47,9 @@
                 <a class="nav-link" href="About.html">About</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="Portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="Resume.html">Resume</a>
               </li>
               <li class="nav-item">
@@ -46,16 +66,16 @@
 <div class="contain_01">
 <div class="jumbotron text-center">
       <div class="row justify-content-center align-items-center" >
-          <div class="col-md-5 text-center text-md-start" style="padding-top: 60px; padding-left: 100px; margin-top: 0%; margin-bottom: 10%;">
+          <div class="col-md-6 text-center text-md-start" style="padding-top: 60px; padding-left: 100px; margin-top: 0%; margin-bottom: 10%;">
                   <div class="m-5 p-5"></div>
                       <h1><strong>
-                        <div class="display-2"> Siyanda Ncamazana</div>
-                        <div class="display-5 text-primary">I am a passionate Web Developer from Cape town.</div>
+                        <div class="display-2">Siyanda Ncamazana.</div>
+                        <div class="display-5 text-primary">I am a passionate Front-End Web Developer from Cape Town.</div>
                       </h1> 
                     </strong>
           </div>
  
-       <div class="col-md-6 text-center d-none d-md-block">
+       <div class="col-md-5 text-center d-none d-md-block">
           <img class="img-fluid" src="pikky.jpg" style="margin-top: 50px; padding-top: 100px;">
        </div>
 
